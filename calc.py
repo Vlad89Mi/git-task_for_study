@@ -1,4 +1,6 @@
-# Автор: ...
+# Автор: Михалев Владимир
+import math
+
 
 def add(a, b):
     return a + b
@@ -9,9 +11,13 @@ def subtract(a, b):
 
 
 def multiply(a, b):
-    # TODO: не реализовано
-    return None
+    return a * b
 
+
+def sqrt(x):
+    if x < 0:
+        raise ValueError("Квадратный корень из отрицательного числа.")
+    return math.sqrt(x)
 
 if __name__ == "__main__":
     print("Простой калькулятор запущен.")
